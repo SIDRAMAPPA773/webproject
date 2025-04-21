@@ -1,1 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgba(235, 137, 217, 0.614);
+    color: white;
+    height: 75px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+nav ul{
+    list-style-type: none;
+    font-family: "Pacifico" , cursive;
+}
+.gameContainer{
+background-color: aqua;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+font-family: "Pacifico", cursive;
+}
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Public Sans", sans-serif;
+    position: relative;
+  
+ 
+
+}
+.box{
+    border:2px solid white;
+    font-size:8vw ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.boxtext {
+    font-size: 8vw;
+    font-weight: bold;
+    color: black;
+}
+
+.box:hover{
+   background-color:  rgba(235, 137, 217, 0.614);
+    font-size:8vw ;
+}
+.gameInfo{
+    padding: 0 34px;
+}
+.imgbox img{
+width:0;
+transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background-color: rgb(253, 176, 229);
+    border-radius: 34px;
+    cursor: pointer;
+
+
+}
+.line{
+    background-color: white;
+    width: 20vw;
+    height: 3px;
+    position: absolute;
+}
+.btn{
+    padding-top: 20px;
+}
+@media screen and (max-width:800px){
+    .gameContainer{
+       flex-wrap:wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+
+}
